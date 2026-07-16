@@ -1,0 +1,40 @@
+2026-07-14 08:15:23 INFO LOGIN_SUCCESS user=alice ip=192.168.1.10 region=US-East service=AWS-IAM
+2026-07-14 08:17:45 INFO FILE_UPLOAD user=alice bucket=finance-reports file=budget.xlsx size=2.3MB
+2026-07-14 08:19:11 INFO EC2_START user=admin instance=i-0a123456789abcdef region=us-east-1
+2026-07-14 08:21:03 WARNING LOGIN_FAILED user=bob ip=45.33.22.91 reason=InvalidPassword
+2026-07-14 08:22:14 WARNING LOGIN_FAILED user=bob ip=45.33.22.91 reason=InvalidPassword
+2026-07-14 08:22:59 WARNING LOGIN_FAILED user=bob ip=45.33.22.91 reason=InvalidPassword
+2026-07-14 08:23:41 ALERT ACCOUNT_LOCKED user=bob reason=TooManyFailedAttempts
+2026-07-14 08:25:10 INFO LOGIN_SUCCESS user=charlie ip=10.10.5.21 region=Europe-West service=Azure
+2026-07-14 08:27:34 INFO VM_CREATED user=charlie vm=web-server-01
+2026-07-14 08:30:11 INFO STORAGE_ACCESS user=alice bucket=finance-reports action=READ
+2026-07-14 08:31:22 INFO STORAGE_ACCESS user=alice bucket=finance-reports action=WRITE
+2026-07-14 08:33:55 WARNING PERMISSION_DENIED user=dave resource=S3Bucket
+2026-07-14 08:35:44 INFO PASSWORD_CHANGED user=alice
+2026-07-14 08:37:29 ALERT ROOT_LOGIN user=root ip=103.27.91.15 region=Unknown
+2026-07-14 08:39:50 INFO SECURITY_GROUP_UPDATED user=admin group=sg-019283
+2026-07-14 08:41:17 INFO API_CALL user=service-account endpoint=/v1/storage/list status=200
+2026-07-14 08:42:33 INFO FILE_DOWNLOAD user=alice file=payroll.pdf
+2026-07-14 08:45:11 WARNING LOGIN_FAILED user=eve ip=221.18.45.77 reason=InvalidPassword
+2026-07-14 08:46:02 WARNING LOGIN_FAILED user=eve ip=221.18.45.77 reason=InvalidPassword
+2026-07-14 08:46:40 WARNING LOGIN_FAILED user=eve ip=221.18.45.77 reason=InvalidPassword
+2026-07-14 08:47:09 WARNING LOGIN_FAILED user=eve ip=221.18.45.77 reason=InvalidPassword
+2026-07-14 08:48:20 ALERT BRUTE_FORCE_DETECTED ip=221.18.45.77 target=eve
+2026-07-14 08:50:15 INFO LOGIN_SUCCESS user=admin ip=192.168.1.20 region=US-East
+2026-07-14 08:52:31 INFO DATABASE_BACKUP user=backup-service database=customers
+2026-07-14 08:55:42 INFO OBJECT_DELETED user=admin object=temp.log
+2026-07-14 08:57:18 WARNING ACCESS_DENIED user=guest resource=AdminPanel
+2026-07-14 09:00:05 INFO API_KEY_CREATED user=admin key_id=AKIA2026XYZ
+2026-07-14 09:03:21 ALERT PUBLIC_BUCKET_DETECTED bucket=customer-data
+2026-07-14 09:06:45 INFO VM_STOPPED user=charlie vm=web-server-01
+2026-07-14 09:08:57 INFO LOGIN_SUCCESS user=alice ip=192.168.1.10
+2026-07-14 09:10:44 WARNING MALWARE_SIGNATURE_DETECTED host=vm-prod-01 signature=Trojan.Generic
+2026-07-14 09:13:32 INFO FIREWALL_RULE_UPDATED user=admin rule=AllowHTTPS
+2026-07-14 09:16:55 ALERT UNUSUAL_LOCATION_LOGIN user=alice ip=177.52.88.90 country=Brazil
+2026-07-14 09:19:14 INFO MFA_ENABLED user=charlie
+2026-07-14 09:22:06 WARNING HIGH_CPU_USAGE instance=i-0a123456789abcdef cpu=97%
+2026-07-14 09:25:43 ALERT DATA_EXFILTRATION_SUSPECTED user=alice destination=198.51.100.20 bytes=5.8GB
+2026-07-14 09:28:30 INFO LOGOUT user=alice
+2026-07-14 09:30:17 INFO LOGOUT user=admin
+2026-07-14 09:33:41 ALERT IAM_POLICY_CHANGED user=root policy=AdministratorAccess
+2026-07-14 09:36:08 INFO SYSTEM_SCAN_COMPLETED status=NoCriticalErrors
